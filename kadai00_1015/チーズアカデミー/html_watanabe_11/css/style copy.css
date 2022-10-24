@@ -1,0 +1,73 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333333;
+    font-size: 1.6rem;
+    width: 1200px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav{
+    display: flex;
+}
+
+.main-nav li a {
+    font-size: 21px;
+    margin: 50px 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/mainbg.png);
+    max-width: 1200px;
+    height: 500px;
+}
+.main1 {
+    font-size: 40px;
+    margin: 15px;
+    color: #fff;
+}
+.main2 {
+    font-size: 30px;
+    margin: 15px;
+    color: #fff;
+}
+
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.About .title_about {
+    font-size: 24px;
+}
+.About 
+
+.footer {
+    background-color: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+.footer p {
+    color: #fff;
+    font-size: 1rem;
+}

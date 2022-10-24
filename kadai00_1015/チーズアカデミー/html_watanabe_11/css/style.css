@@ -1,0 +1,475 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+body {
+    color: #333333;
+    font-size: 1.6rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------
+    header
+---------------------------*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    max-width: 300px;
+    height: 100%;
+    margin-left: 30px;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    display: flex;
+    margin: 50px 25px;
+    font-size: 2.1rem;
+}
+
+/* -------------------------
+    main-view 
+*--------------------------*/
+.main-view{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.main-view .main-text{
+    position: absolute;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-view h1 {
+    position: relative;
+    font-size: 4.0rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.main-view p {
+    position: relative;
+    font-size: 3.0rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+.main-view img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------
+    ABOUT
+--------------*/
+#ABOUT{
+    margin: 60px;
+}
+#ABOUT .wrapper{
+    margin: auto;
+}
+#ABOUT .title_en{
+    font-size: 2.4rem;
+    color: #ffd61a;
+    margin: 0 0 30px;
+}
+#ABOUT .title_jp{
+    font-size: 1.8rem;
+    margin: 0 0 60px;
+}
+#ABOUT .text_1{
+    margin: 0 0 40px;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+#ABOUT .text_2{
+    margin: 40px 0;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+#ABOUT .text_3{
+    margin: 40px 0;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+
+.slider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-item {
+    width: 300px;
+    float: left;
+}
+.slider img{
+    width:100%;
+}
+.slider-inner {
+    width: 400%;
+    animation: slider 20s infinite ease;
+}
+
+@keyframes slider {
+    0% {
+    transform: translateX(0);
+    }
+    25% {
+    transform: translateX(-300px);
+    }
+    50% {
+    transform: translateX(-600px);
+    }  
+    75% {
+    transform: translateX(-900px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+
+/* ------------
+    COURSE
+--------------*/
+#COURSE{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+#COURSE .title{
+    font-size: 2.4rem;
+    color: #222;
+    margin-bottom: 30px;
+}
+#COURSE .subtitle{
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+#COURSE .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+#COURSE img{
+    width: 50%;
+    height: auto;
+}
+#COURSE .block{
+    width: 50%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#COURSE h3{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+#COURSE .article{
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-left: 50px;
+}
+
+
+/* ------------
+    NEWS
+--------------*/
+#NEWS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#NEWS .title_en{
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+#NEWS .title_jp{
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+}
+#NEWS ul{
+    display: flex;
+    margin: 0 auto 60px;
+    justify-content: center;
+    align-items: center;
+}
+#NEWS li{
+    text-align: justify;
+    margin: 0 15px;
+}
+#NEWS img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+#NEWS .day{
+    width: 300px;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+}
+#NEWS .text{
+    width: 300px;
+    line-height: 2;
+    font-size: 1.0rem;
+}
+#NEWS li:hover{
+    transform: translatey(-10px);
+}
+#NEWS .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd61a;
+    width: 300px;
+    height: 60px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+#NEWS .btn:hover{
+    background-color: #ffaf1a;
+}
+/* ------------
+    ACCESS
+--------------*/
+#ACCESS {
+    padding: 60px 0;
+    background-color: #fafafa;
+}
+#ACCESS .title_en{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#ACCESS .title_jp{
+    font-size: 1.8rem;
+    margin-bottom:60px;
+}
+#ACCESS iframe{
+        margin-bottom: 30px;
+}
+#ACCESS table{
+    display: flex;
+    justify-content: center;
+}
+#ACCESS td{
+    padding: 30px 30px 0;
+    line-height: 20px;
+    font-size: 1.4rem;
+}
+
+/* ------------
+    CONTACT
+--------------*/
+#CONTACT {
+    margin:60px 0 140px;
+}
+#CONTACT .title_en{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#CONTACT .title_jp{
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+}
+#CONTACT .text_1{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#CONTACT .text_2{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#CONTACT dl{
+    display: flex;
+    width: 640px;
+    flex-wrap: wrap;
+    margin: auto;
+    border-top: #bfbfbf solid 3px;
+    border-bottom: #bfbfbf solid;
+    margin-bottom: 30px;
+}
+#CONTACT dl div{
+    display: flex;
+    width: 640px;
+    border-top: solid #bfbfbf;
+}
+#CONTACT dt{
+    display: flex;
+    width: 32.5%;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 20px;
+    padding: 8px 64px 8px 16px;
+}
+#CONTACT dd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 67.5%;
+    text-align: left;
+    padding: 8px;
+    border-left: solid #bfbfbf;
+    font-size: 1.2rem;
+    line-height: 60px;
+}
+#CONTACT .submit{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #ffd61a;
+    border-style: none;
+}
+#CONTACT .submit:hover{
+    background-color: #ffaf1a;
+}
+
+
+/* ------------
+    SNS
+--------------*/
+#sns {
+    padding: 100px;
+}
+
+/* 共通のアイコンエフェクト */
+.socialEffect__link {
+    margin: .3em;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #bfbfbf;
+    font-size: 1.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform ease-out 0.2s;
+  }
+  
+  .socialEffect__box li {
+    display: inline-block;
+  }
+  
+  /* インスタ用アイコン設定 */
+  .icon-instagram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+  }
+  .fab.fa-instagram {
+    display: inline-block;
+    color: #fff;
+  }
+  .icon-instagram:hover {
+    background: radial-gradient(
+        circle farthest-corner at 32% 106%,
+        rgb(255, 225, 125) 0%,
+        rgb(255, 205, 105) 10%,
+        rgb(250, 145, 55) 28%,
+        rgb(235, 65, 65) 42%,
+        transparent 82%
+      ),
+      linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    transform: scale(0.9);
+  }
+  
+  /* フェイスブック用アイコン設定 */
+  .icon-facebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+  }
+  .fab.fa-facebook-f {
+    display: inline-block;
+    color: #fff;
+  }
+  .icon-facebook:hover {
+    background: #3b5998;
+    transform: scale(0.9);
+  }
+  
+  /* ツイッター用アイコン設定 */
+  .icon-twitter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+  }
+  .fab.fa-twitter {
+    display: inline-block;
+    color: #fff;
+  }
+  .icon-twitter:hover {
+    background: #00b0ed;
+    transform: scale(0.9);
+  }
+
+/* ------------
+    footer
+--------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    padding: 30px;
+    align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
